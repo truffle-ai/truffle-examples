@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { TruffleAI } from '@trufflehq/sdk';
+import { TruffleAI } from 'truffle-ai';
 
 const client = new TruffleAI(process.env.TRUFFLE_API_KEY || '');
 
@@ -13,7 +13,7 @@ export async function POST() {
         1. Think about the question carefully
         2. Provide a clear and direct answer
         3. Keep responses under 100 words`,
-      model: "gpt-4-turbo",
+      model: "gpt-4o-mini",
       tool: "None"
     });
 
