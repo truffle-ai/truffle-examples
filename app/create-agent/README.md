@@ -48,7 +48,8 @@ npm run dev
     "agentId": "agent_xxx",
     "name": "Example Agent",
     "instruction": "You are a helpful AI assistant...",
-    "model": "gpt-4-turbo"
+    "model": "gpt-4o-mini",
+    "tool": "None" // Explore more tools at https://docs.trytruffle.ai/
   }
 }
 ```

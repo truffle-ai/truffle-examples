@@ -1,11 +1,12 @@
 import { NextRequest, NextResponse } from 'next/server';
 
-const AGENT_ID = "45287c51-b368-4581-aad0-6e8f8ebd6824";
+const AGENT_ID = process.env.RESEARCH_AGENT_ID;
 const API_KEY = process.env.TRUFFLE_API_KEY;
 
 if (!API_KEY) {
   throw new Error('TRUFFLE_API_KEY is not configured');
 }
+
 
 export async function POST(req: NextRequest) {
   try {
@@ -24,7 +25,7 @@ export async function POST(req: NextRequest) {
       'Content-Type': 'application/json',
     } as const;
 
-    const response = await fetch(`https://www.trytruffle.ai/api/v1/agents/45287c51-b368-4581-aad0-6e8f8ebd6824/run`, {
+    const response = await fetch(`https://www.trytruffle.ai/api/v1/agents/${AGENT_ID}/run`, {
       method: 'POST',
       headers,
       body: JSON.stringify({

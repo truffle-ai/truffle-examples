@@ -6,6 +6,9 @@ if (!process.env.TRUFFLE_API_KEY) {
 
 const API_KEY = process.env.TRUFFLE_API_KEY;
 
+const AGENT_ID = process.env.YOUTUBE_QUIZ_AGENT_ID;
+
+// In this example, we're using a custom schema for the quiz response instead of the default schema defined during agent creation
 const RESPONSE_SCHEMA = {
     name: "quiz",
     strict: true,
@@ -72,7 +75,7 @@ export async function POST(req: NextRequest) {
             'Content-Type': 'application/json',
         } as const;
 
-        const result = await fetch(`https://www.trytruffle.ai/api/v1/agents/73c5fb52-318e-431b-84b4-63f483639a51/run`, {
+        const result = await fetch(`https://www.trytruffle.ai/api/v1/agents/${AGENT_ID}/run`, {
             method: 'POST',
             headers,
             body: JSON.stringify({

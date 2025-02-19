@@ -6,6 +6,8 @@ if (!process.env.TRUFFLE_API_KEY) {
 
 const API_KEY = process.env.TRUFFLE_API_KEY;
 
+const AGENT_ID = process.env.URL_EXTRACTOR_AGENT_ID;
+
 export async function POST(req: NextRequest) {
     try {
         const { url, context, schema } = await req.json();
@@ -29,7 +31,7 @@ export async function POST(req: NextRequest) {
             'Content-Type': 'application/json',
         } as const;
 
-        const result = await fetch(`https://www.trytruffle.ai/api/v1/agents/8d0eee62-4c76-44d9-bd70-7171a939f2e4/run`, {
+        const result = await fetch(`https://www.trytruffle.ai/api/v1/agents/${AGENT_ID}/run`, {
             method: 'POST',
             headers,
             body: JSON.stringify({

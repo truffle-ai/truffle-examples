@@ -6,55 +6,7 @@ if (!process.env.TRUFFLE_API_KEY) {
 
 const API_KEY = process.env.TRUFFLE_API_KEY;
 
-const RESPONSE_SCHEMA = {
-    type: 'object',
-    required: ['summary', 'keyPoints', 'topicTimestamps', 'quotes', 'relatedTopics'],
-    properties: {
-        summary: {
-            type: 'string',
-            description: 'Executive summary of the video content (2-3 sentences)'
-        },
-        keyPoints: {
-            type: 'array',
-            items: {
-                type: 'string'
-            },
-            description: 'List of key takeaways from the video'
-        },
-        topicTimestamps: {
-            type: 'array',
-            items: {
-                type: 'object',
-                required: ['time', 'topic'],
-                properties: {
-                    time: {
-                        type: 'string',
-                        pattern: '^[0-9]{2}:[0-9]{2}$',
-                        description: 'Timestamp in MM:SS format'
-                    },
-                    topic: {
-                        type: 'string',
-                        description: 'Description of the topic at this timestamp'
-                    }
-                }
-            }
-        },
-        quotes: {
-            type: 'array',
-            items: {
-                type: 'string'
-            },
-            description: 'Important quotes or memorable statements from the video'
-        },
-        relatedTopics: {
-            type: 'array',
-            items: {
-                type: 'string'
-            },
-            description: 'Suggested topics for further learning'
-        }
-    }
-};
+const AGENT_ID = process.env.YOUTUBE_SUMMARIZER_AGENT_ID;
 
 export async function POST(req: NextRequest) {
     try {
@@ -78,12 +30,12 @@ export async function POST(req: NextRequest) {
             'Content-Type': 'application/json',
         } as const;
 
-        const result = await fetch(`https://www.trytruffle.ai/api/v1/agents/73c5fb52-318e-431b-84b4-63f483639a51/run`, {
+        const result = await fetch(`https://www.trytruffle.ai/api/v1/agents/${AGENT_ID}/run`, {
             method: 'POST',
             headers,
             body: JSON.stringify({
                 input_data: input,
-                json_mode: true
+                json_mode: true //In this example, we have set the json_mode to true which uses the json_format schema defined during agent creation
             })
         });
 
