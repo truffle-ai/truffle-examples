@@ -2,6 +2,12 @@
 
 This repository contains example projects and demonstrations showcasing how to use Truffle AI agents in various scenarios. Each example is self-contained and demonstrates different aspects of building and using AI agents.
 
+## Prerequisites
+
+- Node.js (v16 or higher recommended)
+- npm or yarn
+- Truffle AI account and API key. Sign up for free: https://www.trytruffle.ai/app. Get your API key in the settings tab.
+
 ## Examples
 
 ### Agent Creation & Management
@@ -37,7 +43,7 @@ TRUFFLE_API_KEY=your_api_key_here
 npm run dev
 ```
 
-5. Navigate to specific examples at:
+5. Open localhost:3000 in your browser, and navigate to specific examples at these endpoints:
 - `/create-agent`
 - `/portfolio`
 - `/journal-demo`
@@ -47,11 +53,6 @@ npm run dev
 - `/youtube-quiz`
 - `/research-agent`
 
-## Prerequisites
-
-- Node.js (v16 or higher recommended)
-- npm or yarn
-- Truffle AI account and API key
 
 ## Project Structure
 
