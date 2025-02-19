@@ -7,24 +7,18 @@ This repository contains example projects and demonstrations showcasing how to u
 ### Agent Creation & Management
 - **Create Agent Demo**: Shows how to programmatically create and configure new agents using the SDK
 - **Portfolio Chat**: Demonstrates building an AI-powered portfolio chat interface
-
-### Content Generation & Analysis
 - **Journal Demo**: AI-powered journaling application with real-time writing suggestions
 - **Social Content Generator**: Multi-platform social media content generation
 - **URL Content Extractor**: Extract structured content from URLs using custom schemas
-
-### Video Processing
 - **YouTube Summarizer**: Generate comprehensive video summaries with key points and timestamps
 - **YouTube Quiz Generator**: Automatically create interactive quizzes from video content
-
-### Research & Analysis
 - **Research Agent**: AI-powered research assistant with source verification and citation
 
 ## Getting Started
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/truffle-ai/truffle-ai-examples.git
+git clone https://github.com/truffle-ai/truffle-examples.git
 ```
 
 2. Install dependencies:
@@ -61,6 +55,7 @@ npm run dev
 
 ## Project Structure
 
+```
 examples/
 ├── app/
 │ ├── create-agent/ # Agent creation example
@@ -73,7 +68,7 @@ examples/
 │ └── research-agent/ # Research assistant
 ├── styles/ # Shared styles
 └── public/ # Static assets
-
+```
 
 ## Features Across Examples
 
@@ -84,35 +79,9 @@ examples/
 - **Responsive Design**: Mobile-friendly interfaces
 - **Dark Mode**: Support for light/dark themes in applicable examples
 
-## Common Patterns
-
-1. **Agent Configuration**:
-   - Environment-based agent IDs
-   - Custom instructions and models
-   - Tool integration where applicable
-
-2. **API Integration**:
-   - Consistent error handling
-   - Response validation
-   - Rate limiting consideration
-
-3. **User Experience**:
-   - Loading states
-   - Error messages
-   - Success feedback
-   - Responsive design
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a Pull Request
-
 ## License
 
-ISC License - See LICENSE file for details
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Resources
 

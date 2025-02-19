@@ -32,6 +32,17 @@ npm run dev
 
 5. Navigate to `/portfolio` to start chatting
 
+## Creating Your Own AI Portfolio Agent
+
+1. Navigate to the Truffle AI Dashboard at `dashboard.truffle.ai`
+2. Sign up or log in to your account
+3. Click on "Create New Agent"
+4. Upload your resume (PDF or Word format)
+5. Customize the agent's personality and response style
+6. Click "Create Agent"
+7. Copy your new agent ID
+8. Update the `PORTFOLIO_AGENT_ID` in your `.env.local` file
+
 ## How It Works
 
 1. The AI agent is loaded with your resume/portfolio context
@@ -48,3 +59,4 @@ npm run dev
 5. Add voice interaction
 6. Implement multi-language support
 7. Add analytics for common questions
+
