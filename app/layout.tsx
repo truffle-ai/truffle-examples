@@ -4,7 +4,7 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Sample Projects',
+  title: 'Truffle AI Demo Projects',
   description: 'Example projects showcasing Truffle AI agent capabilities',
 }
 
