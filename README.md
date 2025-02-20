@@ -6,7 +6,7 @@ This repository contains example projects and demonstrations showcasing how to u
 
 - Node.js (v16 or higher recommended)
 - npm or yarn
-- Truffle AI account and API key. Sign up for free: https://www.trytruffle.ai/app. Get your API key in the settings tab.
+- Truffle AI account and API key. Sign up for free: https://www.trytruffle.ai. Get your API key in the settings tab.
 
 ## Examples
 
@@ -43,7 +43,7 @@ TRUFFLE_API_KEY=your_api_key_here
 npm run dev
 ```
 
-5. Open localhost:3000 in your browser, and navigate to specific examples at these endpoints. Check the READMEs in individual folders for instructions and how to set up the specific examples.
+5. Open localhost:3000 and navigate to the specific examples. Check the READMEs in individual folders for instructions and how to set up the specific examples.
 - `/create-agent`
 - `/portfolio`
 - `/journal-demo`
@@ -56,8 +56,12 @@ npm run dev
 
 ## Project Structure
 
+The examples are all in the `app` folder.
+Each folder has an API route file, a page.tsx file, and a README.md file with instructions and setup steps.
+The API route files show how to use Truffle AI agents with our SDK.
+The page.tsx files show how to call the API routes from the UI to build AI based applications
+
 ```
-examples/
 ├── app/
 │ ├── create-agent/ # Agent creation example
 │ ├── portfolio/ # Portfolio chat interface
@@ -68,17 +72,9 @@ examples/
 │ ├── youtube-quiz/ # Quiz generation
 │ └── research-agent/ # Research assistant
 ├── styles/ # Shared styles
-└── public/ # Static assets
+├── public/ # Static assets
+└── components/ # Shadcn UI components
 ```
-
-## Features Across Examples
-
-- **AI Integration**: Each example demonstrates different aspects of the Truffle AI SDK
-- **Error Handling**: Comprehensive error handling and user feedback
-- **TypeScript**: Full TypeScript support for type safety
-- **Modern UI**: Built with Next.js 13+ and Tailwind CSS
-- **Responsive Design**: Mobile-friendly interfaces
-- **Dark Mode**: Support for light/dark themes in applicable examples
 
 ## License
 
