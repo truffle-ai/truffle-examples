@@ -8,7 +8,7 @@ const API_KEY = process.env.TRUFFLE_API_KEY;
 
 // Notice how we are using the same agent ID for the quiz and summarizer
 // This is because we are using the same agent to generate the quiz and summarize the video, just changing output schema to fit the quiz
-const AGENT_ID = "73c5fb52-318e-431b-84b4-63f483639a51" //You can change this to your own agent ID
+const AGENT_ID = "73c5fb52-318e-431b-84b4-63f483639a51" // You can change this to your own agent ID
 
 // In this example, we're using a custom schema for the quiz response instead of the default schema defined during agent creation
 const RESPONSE_SCHEMA = {

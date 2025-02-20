@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 
-const AGENT_ID = "b7065bed-3961-4cff-b5b7-619d860d2021" //You can change this to your own agent ID
+// You can change this to your own agent ID
+const AGENT_ID = "b7065bed-3961-4cff-b5b7-619d860d2021"
 const API_KEY = process.env.TRUFFLE_API_KEY;
 
 if (!API_KEY) {
