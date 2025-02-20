@@ -9,7 +9,7 @@ const client = new TruffleAI(process.env.TRUFFLE_API_KEY);
 
 // Create a new agent for journal suggestions if needed
 // You can create this agent through the Truffle AI dashboard or programmatically
-const JOURNAL_AGENT_ID = process.env.JOURNAL_AGENT_ID;
+const JOURNAL_AGENT_ID = "7dd9b3db-a3cb-4e4f-a831-9d199ceedf8a" //You can change this to your own agent ID
 
 export async function POST(req: NextRequest) {
   try {

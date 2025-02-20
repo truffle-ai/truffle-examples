@@ -9,11 +9,12 @@ const client = new TruffleAI(process.env.TRUFFLE_API_KEY);
 
 // Create agents for each step in the chain
 // You can create these agents through the Truffle AI dashboard or programmatically
+// You can change these agent IDs to your own agent IDs
 const AGENT_CHAIN = {
-  research: process.env.RESEARCH_AGENT_ID,
-  twitter: process.env.TWITTER_AGENT_ID,
-  linkedin: process.env.LINKEDIN_AGENT_ID,
-  instagram: process.env.INSTAGRAM_AGENT_ID
+  research: "b7065bed-3961-4cff-b5b7-619d860d2021",
+  twitter: "bba6480b-3a1c-40bb-8828-03d6e4e81a14",
+  linkedin: "e0fdd925-f984-4e3b-bfc5-12fa6afbc7c6",
+  instagram: "e4f4c3a6-2424-4b2e-aa2d-04af10adcc73"
 };
 
 export async function POST(req: NextRequest) {

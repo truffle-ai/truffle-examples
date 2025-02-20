@@ -22,7 +22,6 @@ npm install
 Create a `.env.local` file in the root directory and add your Truffle AI API key:
 ```
 TRUFFLE_API_KEY=your_api_key_here
-PORTFOLIO_AGENT_ID=your_agent_id_here
 ```
 
 3. Run the development server:
@@ -41,7 +40,7 @@ npm run dev
 5. Customize the agent's personality and response style
 6. Click "Create Agent"
 7. Copy your new agent ID
-8. Update the `PORTFOLIO_AGENT_ID` in your `.env.local` file
+8. Use the agent ID in the `api/route.ts` file
 
 ## How It Works
 

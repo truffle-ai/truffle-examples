@@ -6,7 +6,7 @@ if (!process.env.TRUFFLE_API_KEY) {
 
 const API_KEY = process.env.TRUFFLE_API_KEY;
 
-const AGENT_ID = process.env.URL_EXTRACTOR_AGENT_ID;
+const AGENT_ID = "8d0eee62-4c76-44d9-bd70-7171a939f2e4" //You can change this to your own agent ID
 
 export async function POST(req: NextRequest) {
     try {

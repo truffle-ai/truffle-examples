@@ -22,7 +22,6 @@ npm install
 Create a `.env.local` file in the root directory and add your Truffle AI API key:
 ```
 TRUFFLE_API_KEY=your_api_key_here   
-RESEARCH_AGENT_ID=your_agent_id_here
 ```
 
 3. Run the development server:
