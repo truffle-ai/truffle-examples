@@ -61,7 +61,7 @@ export default function ResearchAgent() {
     setResponse(null);
 
     try {
-      const response = await fetch('/api/use-cases/research-agent/search', {
+      const response = await fetch('/research-agent/api/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ query })

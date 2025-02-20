@@ -82,7 +82,7 @@ export default function YouTubeSummarizer() {
     }, 3000);
 
     try {
-      const response = await fetch('/api/youtube-summarizer', {
+      const response = await fetch('/youtube-summarizer/api/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ 

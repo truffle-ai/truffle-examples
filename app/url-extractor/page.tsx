@@ -74,7 +74,7 @@ export default function URLExtractor() {
         setResult(null);
 
         try {
-            const response = await fetch('/api/url-extractor', {
+            const response = await fetch('/url-extractor/api/', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ 

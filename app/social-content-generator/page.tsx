@@ -39,7 +39,7 @@ export default function SocialContentGenerator() {
     setPlatformContent(prev => prev.map(content => ({ ...content, status: 'loading' })));
     
     try {
-      const response = await fetch('/api/use-cases/social-content/generate', {
+      const response = await fetch('/social-content-generator/api/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ topic }),

@@ -97,7 +97,7 @@ export default function AIPortfolio() {
         }]);
 
         try {
-            const response = await fetch('/api/ai-portfolio/chat', {
+            const response = await fetch('/portfolio/api/', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ message: userMessage })

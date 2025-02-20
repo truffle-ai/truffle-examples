@@ -71,7 +71,7 @@ export default function YouTubeQuiz() {
     }, 3000);
 
     try {
-      const response = await fetch('/api/youtube-quiz', {
+      const response = await fetch('/youtube-quiz/api/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ 

@@ -18,7 +18,7 @@ export default function CreateAgentPage() {
   const handleCreateAgent = async () => {
     setLoading(true);
     try {
-      const res = await fetch('/api/use-cases/create-agent', {
+      const res = await fetch('/create-agent/api/', {
         method: 'POST',
       });
       const data = await res.json();

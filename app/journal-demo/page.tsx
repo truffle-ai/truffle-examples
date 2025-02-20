@@ -147,7 +147,7 @@ const JournalDemo = () => {
     if (lastChar === '\n') {
       setIsLoading(true);
       try {
-        const response = await fetch('/api/use-cases/journal/suggest', {
+        const response = await fetch('/journal-demo/api/', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
