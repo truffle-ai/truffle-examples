@@ -43,7 +43,7 @@ TRUFFLE_API_KEY=your_api_key_here
 npm run dev
 ```
 
-5. Open localhost:3000 in your browser, and navigate to specific examples at these endpoints:
+5. Open localhost:3000 in your browser, and navigate to specific examples at these endpoints. Check the READMEs in individual folders for instructions and how to set up the specific examples.
 - `/create-agent`
 - `/portfolio`
 - `/journal-demo`
