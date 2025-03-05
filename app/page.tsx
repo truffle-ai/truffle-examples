@@ -52,22 +52,6 @@ export default function Home() {
             <h2 className="text-2xl font-semibold mb-2">URL Extractor</h2>
             <p className="text-gray-600">Extract and analyze content from web URLs</p>
           </Link>
-
-          <Link 
-            href="/youtube-quiz" 
-            className="p-6 border rounded-lg hover:bg-gray-50 transition-colors"
-          >
-            <h2 className="text-2xl font-semibold mb-2">YouTube Quiz Generator</h2>
-            <p className="text-gray-600">Generate quizzes from YouTube video content</p>
-          </Link>
-
-          <Link 
-            href="/youtube-summarizer" 
-            className="p-6 border rounded-lg hover:bg-gray-50 transition-colors"
-          >
-            <h2 className="text-2xl font-semibold mb-2">YouTube Summarizer</h2>
-            <p className="text-gray-600">Get AI-powered summaries of YouTube videos</p>
-          </Link>
         </div>
       </div>
     </main>
