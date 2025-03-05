@@ -1,7 +1,8 @@
 {
   "name": "truffle-ai-examples",
-  "version": "1.0.0",
-  "description": "Example projects showcasing Truffle AI agent capabilities",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A collection of example applications showcasing Truffle AI agent capabilities including journal assistant, research agent, portfolio generator, and more.",
   "main": "index.js",
   "scripts": {
     "dev": "next dev",

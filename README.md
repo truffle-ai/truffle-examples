@@ -1,32 +1,18 @@
 # Truffle AI Examples
 
-This repository contains example projects and demonstrations showcasing how to use Truffle AI agents in various scenarios. Each example is self-contained and demonstrates different aspects of building and using AI agents.
+A collection of example applications showcasing different capabilities of Truffle AI agents.
 
 ## Prerequisites
 
 - Node.js (v16 or higher recommended)
 - npm or yarn
-- Truffle AI account and API key. Sign up for free: https://www.trytruffle.ai. Get your API key in the settings tab.
-
-## Examples
-
-### Agent Creation & Management
-- **Create Agent Demo**: Shows how to programmatically create and configure new agents using the SDK
-- **Portfolio Chat**: Demonstrates building an AI-powered portfolio chat interface
-- **Journal Demo**: AI-powered journaling application with real-time writing suggestions
-- **Social Content Generator**: Multi-platform social media content generation
-- **URL Content Extractor**: Extract structured content from URLs using custom schemas
-- **YouTube Summarizer**: Generate comprehensive video summaries with key points and timestamps
-- **YouTube Quiz Generator**: Automatically create interactive quizzes from video content
-- **Research Agent**: AI-powered research assistant with source verification and citation
+- Truffle AI account and API key
+  - Sign up for free: https://www.trytruffle.ai
+  - Get your API key in the settings tab
 
 ## Getting Started
 
-1. Clone the repository:
-```bash
-git clone https://github.com/truffle-ai/truffle-examples.git
-```
-
+1. Clone this repository
 2. Install dependencies:
 ```bash
 npm install
@@ -43,16 +29,27 @@ TRUFFLE_API_KEY=your_api_key_here
 npm run dev
 ```
 
-5. Open localhost:3000 and navigate to the specific examples. Check the READMEs in individual folders for instructions and how to set up the specific examples.
-- `/create-agent`
-- `/portfolio`
-- `/journal-demo`
-- `/social-content-generator`
-- `/url-extractor`
-- `/youtube-summarizer`
-- `/youtube-quiz`
-- `/research-agent`
+5. Open [http://localhost:3000](http://localhost:3000) to see the examples
 
+## Available Examples
+
+- **Journal Demo**: Interactive AI-powered journaling experience
+- **Research Agent**: AI-powered research assistant
+- **Portfolio Generator**: Generate professional portfolios with AI
+- **Create Agent**: Create and customize your own AI agent
+- **Social Content Generator**: Generate optimized content for multiple social platforms
+- **URL Extractor**: Extract and analyze content from web URLs
+
+## Adding Your Own Examples
+
+1. Create a new folder in the `app` directory
+2. Add your page component and API routes
+3. Update the main page to include a link to your example
+4. Document your example with a README.md file
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## Project Structure
 
@@ -68,8 +65,6 @@ The page.tsx files show how to call the API routes from the UI to build AI based
 │ ├── journal-demo/ # AI journaling application
 │ ├── social-content-generator/ # Social media content
 │ ├── url-extractor/ # URL content extraction
-│ ├── youtube-summarizer/ # Video summarization
-│ ├── youtube-quiz/ # Quiz generation
 │ └── research-agent/ # Research assistant
 ├── styles/ # Shared styles
 ├── public/ # Static assets

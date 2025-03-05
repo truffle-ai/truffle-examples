@@ -46,6 +46,14 @@ export default function Home() {
           </Link>
 
           <Link 
+            href="/social-content-generator" 
+            className="p-6 border rounded-lg hover:bg-gray-50 transition-colors"
+          >
+            <h2 className="text-2xl font-semibold mb-2">Social Content Generator</h2>
+            <p className="text-gray-600">Generate optimized content for multiple social platforms</p>
+          </Link>
+
+          <Link 
             href="/url-extractor" 
             className="p-6 border rounded-lg hover:bg-gray-50 transition-colors"
           >
